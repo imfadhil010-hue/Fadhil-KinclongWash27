@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinclongWash - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #4da8da, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    nav {
+      background-color: #0077b6;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    
+    nav li {
+      margin: 0 15px;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    nav a:hover, nav a.active {
+      background-color: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+    
+    .hero {
+      background-color: #e9f5fe;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .hero h2 {
+      color: #0077b6;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #4da8da;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .cta-button:hover {
+      background-color: #0077b6;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    }
+    
+    .gallery {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .gallery h2 {
+      color: #0077b6;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .image-card {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      background-color: white;
+    }
+    
+    .image-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .image-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .image-caption {
+      padding: 15px;
+      text-align: center;
+      background-color: white;
+    }
+    
+    .image-caption h3 {
+      color: #0077b6;
+      margin-bottom: 5px;
+    }
+    
+    .features {
+      padding: 60px 20px;
+      background-color: white;
+    }
+    
+    .features h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    
+    .features-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .feature-card {
+      background-color: white;
+      width: 100%;
+      max-width: 350px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #4da8da;
+      margin-bottom: 15px;
+    }
+    
+    .feature-card h3 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+    
+    footer {
+      background: linear-gradient(135deg, #0077b6, #4da8da);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav li {
+        margin: 5px 0;
+      }
+      
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .feature-card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KinclongWash</h1>
+    <p>Cuci motor bersahaja, motor bersih hati pun senang!</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+  
+  <section class="hero">
+    <h2>Selamat Datang di KinclongWash</h2>
+    <p>Kami siap mencuci motor Anda dengan bersih dan sungguh kinclong! Dengan tenaga profesional dan peralatan modern, kami memberikan hasil terbaik untuk kendaraan Anda.</p>
+    <a href="layanan.html" class="cta-button">Lihat Layanan Kami</a>
+  </section>
+  
+  <section class="gallery">
+    <h2>Galeri KinclongWash</h2>
+    <div class="image-container">
+      <div class="image-card">
+        <img src="cuci motor-2.jpg" alt="Proses pencucian motor dengan busa">
+        <div class="image-caption">
+          <h3>Cuci Busa Menyeluruh</h3>
+          <p>Membersihkan setiap sudut motor dengan busa berkualitas</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="cuci motor 1.jpg" alt="Motor bersih setelah dicuci">
+        <div class="image-caption">
+          <h3>Hasil Kinclong</h3>
+          <p>Motor tampak seperti baru setelah dicuci di KinclongWash</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="cuci motor2.1.jpg" alt="Proses pengeringan motor">
+        <div class="image-caption">
+          <h3>Pengeringan Menyeluruh</h3>
+          <p>Pengeringan sempurna tanpa meninggalkan bekas air</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="features">
+    <h2>Mengapa Memilih KinclongWash?</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon">🚿</div>
+        <h3>Bersih Maksimal</h3>
+        <p>Kami menggunakan teknik dan produk terbaik untuk hasil yang kinclong dan tahan lama.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Cepat & Efisien</h3>
+        <p>Proses cuci yang cepat tanpa mengorbankan kualitas hasil.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3>Harga Terjangkau</h3>
+        <p>Layanan berkualitas dengan harga yang ramah di kantong.</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 KinclongWash. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>

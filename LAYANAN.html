@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - KinclongWash</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background: linear-gradient(135deg, #4da8da, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav {
+      background: linear-gradient(135deg, #4da8da, #0077b6);
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    nav a.active {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+    h2 {
+      color: #4da8da;
+      margin-bottom: 30px;
+    }
+    .layanan-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      color: #4da8da;
+      margin-top: 0;
+    }
+    .card .harga {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 15px 0;
+    }
+    .card .harga-promo {
+      color: #e74c3c;
+      font-size: 1.2em;
+    }
+    .card .harga-asli {
+      text-decoration: line-through;
+      color: #7f8c8d;
+      font-size: 1em;
+    }
+    .card ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .card li {
+      margin-bottom: 8px;
+    }
+    .btn {
+      background-color: #4da8da;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    .btn:hover {
+      background-color: #3a8bc2;
+    }
+    footer {
+      background-color: #4da8da;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+    .highlight {
+      background-color: #ffeb3b;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+    .promo-badge {
+      background-color: #e74c3c;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+    }
+    .card-container {
+      position: relative;
+    }
+    .diskon {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KinclongWash</h1>
+    <p>Cuci motor bersahaja, motor bersih hati pun senang!</p>
+  </header>
+  <nav>
+    <a href="index.html.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="layanan.html" class="active">Layanan</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+  <section>
+    <h2>Pilihan Layanan</h2>
+    <div class="layanan-container">
+      <div class="card-container">
+        <div class="card">
+          <h3>Cuci Biasa</h3>
+          <div class="harga">Rp 15.000</div>
+          <p>Cuci cepat dan bersih hanya dalam 25 menit.</p>
+          <ul>
+            <li>Cuci body motor</li>
+            <li>Bersihkan rantai</li>
+            <li>Keringkan dengan lap microfiber</li>
+          </ul>
+          <button class="btn">Pilih Layanan</button>
+        </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3>Cuci + Semir</h3>
+          <div class="harga">Rp 25.000</div>
+          <p>Motor kinclong luar dalam dengan semir ban dan body.</p>
+          <ul>
+            <li>Semua layanan cuci biasa</li>
+            <li>Semir body motor</li>
+            <li>Semir ban</li>
+            <li>Perawatan kaca</li>
+          </ul>
+          <button class="btn">Pilih Layanan</button>
+        </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="promo-badge">POPULER</div>
+        <div class="card">
+          <h3>Cuci Premium</h3>
+          <div class="harga">Rp 40.000</div>
+          <p>Perawatan ekstra untuk motor kesayangan Anda.</p>
+          <ul>
+            <li>Semua layanan cuci + semir</li>
+            <li>Perawatan jok kulit</li>
+            <li>Pelindung UV untuk body</li>
+            <li>Aroma terapi</li>
+            <li>Perawatan rantai khusus</li>
+          </ul>
+          <button class="btn">Pilih Layanan</button>
+        </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="card">
+          <h3>Cuci Express</h3>
+          <div class="harga">Rp 20.000</div>
+          <p>Mencuci motor secepat kilat wangi dan bersih hanya 15 menit.</p>
+          <ul>
+            <li>Cuci kilat 15 menit</li>
+            <li>Bersihkan bagian penting</li>
+            <li>Wangi tahan lama</li>
+            <li>Tanpa antrian</li>
+          </ul>
+          <button class="btn">Pilih Layanan</button>
+        </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="promo-badge">PROMO</div>
+        <div class="card">
+          <h3>Paket Hemat</h3>
+          <div class="harga-promo">Rp 135.000</div>
+          <div class="harga-asli">Rp 150.000</div>
+          <p class="diskon">Hemat 10%</p>
+          <p>10x cuci motor + 1x gratis</p>
+          <ul>
+            <li>Dapat digunakan untuk cuci biasa</li>
+            <li>Masa berlaku 3 bulan</li>
+            <li>Dapat ditransfer ke teman</li>
+            <li>Gratis 1x cuci setelah 10x penggunaan</li>
+          </ul>
+          <button class="btn">Pilih Layanan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 KinclongWash. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>

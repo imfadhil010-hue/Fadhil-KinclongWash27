@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimoni - KinclongWash</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #4da8da, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    nav {
+      background: linear-gradient(135deg, #4da8da, #0077b6);
+      padding: 15px 0;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+    }
+    
+    nav a.active {
+      background-color: rgba(255,255,255,0.2);
+    }
+    
+    .hero {
+      background-color: #e9f5fe;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .hero h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+    
+    .testimonials {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .testimonials h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .rating {
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    
+    .author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #0077b6;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    
+    .cta {
+      background: #e9f5fe;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: #0077b6;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    
+    /* Footer */
+    footer {
+      background: #005a8d;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KinclongWash</h1>
+    <p>Cuci motor bersahaja, motor bersih hati pun senang!</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html.html">Home</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="testimoni.html" class="active">Testimoni</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+  
+  <section class="hero">
+    <h2>Apa Kata Pelanggan Kami?</h2>
+    <p>Testimoni jujur dari pelanggan setia KinclongWash</p>
+  </section>
+  
+  <section class="testimonials">
+    <h2>Testimoni Pelanggan</h2>
+    
+    <div class="testimonial-card">
+      <div class="rating">★★★★★</div>
+      <p class="testimonial-text">"Motor saya jadi super kinclong! Pelayanannya cepat dan ramah. Hasilnya memuaskan!"</p>
+      <div class="author">
+        <div class="author-avatar">A</div>
+        <div>
+          <strong>Agha</strong>
+          <p>Pelanggan Setia</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-card">
+      <div class="rating">★★★★★</div>
+      <p class="testimonial-text">"Harga terjangkau dan hasilnya mantap! Motor selalu bersih maksimal."</p>
+      <div class="author">
+        <div class="author-avatar">A</div>
+        <div>
+          <strong>Akbar</strong>
+          <p>Pelanggan Rutin</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-card">
+      <div class="rating">★★★★★</div>
+      <p class="testimonial-text">"Tempat tunggu nyaman dan karyawan ramah. Pengalaman mencuci yang menyenangkan."</p>
+      <div class="author">
+        <div class="author-avatar">F</div>
+        <div>
+          <strong>Fauzan</strong>
+          <p>Pelanggan Baru</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-card">
+      <div class="rating">★★★★☆</div>
+      <p class="testimonial-text">"Suasana tidak membosankan. Proses cepat dan hasil memuaskan."</p>
+      <div class="author">
+        <div class="author-avatar">P</div>
+        <div>
+          <strong>Putri</strong>
+          <p>Pelanggan Bulanan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ingin Motor Anda Kinclong Juga?</h2>
+    <p>Kunjungi tempat cuci motor kami dan rasakan perbedaannya</p>
+    <a href="kontak.html" class="cta-button">Hubungi Kami</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 KinclongWash. Semua Hak Dilindungi.</p>
+    <p>Telp: (021) 1234-5678 | Email: info@kinclongwash.com</p>
+  </footer>
+</body>
+</html>
